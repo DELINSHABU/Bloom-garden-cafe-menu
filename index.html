@@ -3,43 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bloom garden cafe</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <script defer src="/scripts.js"></script>
 </head>
 <body>
-    <header>
-        <img src="/img/logos/bloom-graden-cafe-text.png" alt="" srcset="">
-    </header>
-    <div class="main">
-        <div class="event-Page">
-            <div class="text-bar">
-                <h2>Event</h2>
-                <button class="Event-btn">See all</button>
-            </div>
-            <div class="event-slideShow">
-                <div class="slider-container" id="slider-container">
-                    <div class="slider" id="slider">
-                        <div class="slide"><img src="image1.png"  class="center" alt="Image 1"></div>
-                        <div class="slide"><img src="image2.png"  class="center" alt="Image 2"></div>
-                        <div class="slide"><img src="image3.png"  class="center" alt="Image 3"></div>
-                    </div>
-                
-                    <div class="dot-container">
-                        <div class="dot" onclick="currentSlide(0)"></div>
-                        <div class="dot" onclick="currentSlide(1)"></div>
-                        <div class="dot" onclick="currentSlide(2)"></div>
-                    </div>
+    <nav>
+        <img src="/img/logos/bloom-graden-cafe-text.png" alt="bloom-logo">
+    </nav>
+    <div class="offersection">
+        <div class="slidingbox">
+            <div class="slider-container" id="slider-container">
+                <div class="slider" id="slider">
+                    <div class="slide"><img src="/img/offer/Frame 13.png"  class="center" alt="Image 1"></div>
+                    <div class="slide"><img src="image2.png"  class="center" alt="Image 2"></div>
+                    <div class="slide"><img src="image3.png"  class="center" alt="Image 3"></div>
                 </div>
-            </div>
-        </div>
-        <div class="menu-Page">
-            <div class="text-bar">
-                <h2>Menu</h2>
-                <button onclick="toggleMenuPage()"  class="menu-btn">See all</button>
-            </div>
-            <div class="product-div">
-                <object type="text/html" data="/menu.html" width="100%" height="1000"></object>
+            
+                <div class="dot-container">
+                    <div class="dot" onclick="currentSlide(0)"></div>
+                    <div class="dot" onclick="currentSlide(1)"></div>
+                    <div class="dot" onclick="currentSlide(2)"></div>
+                </div>
             </div>
         </div>
     </div>

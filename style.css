@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 *{
     padding: 0%;
-    
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 300
 }
 body{
     background-color: #0A6847;
@@ -67,4 +70,22 @@ nav{
     height: 100 rem;
     object-fit:fill;
   }
-  
+  .menuSection img{
+    width: 55%;
+  }
+  .menuList{
+    display: flex;
+    align-items: center;
+  }
+  .freshJuices{
+    border: white solid 2px;
+    display: flex;
+    font-size: .4em;
+    flex-direction: column;
+    /* align-content: center; */
+    align-items: center;
+    text-align: left;
+    width: 50%;
+
+
+  }

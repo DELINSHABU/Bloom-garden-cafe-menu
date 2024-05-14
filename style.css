@@ -9,13 +9,31 @@ body{
     background-color: #0A6847;
     align-items: center;
 }
+
 nav{
     display: flex;
     justify-content: space-around;
 }
-.offersection{
-    display: flex;
-    justify-content: space-around;
+#floating-bar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px; /* Adjust height as needed */
+  background-color: #333;
+  color: #fff;
+  display: flex; /* Center content horizontally */
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#floating-bar button {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 .slidingbox{
     border-radius: 10px;
@@ -77,15 +95,31 @@ nav{
     display: flex;
     align-items: center;
   }
-  .freshJuices{
-    border: white solid 2px;
+  
+  .productBox{
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(186,45,37,1) 100%); 
+    border: 1px solid white;
+     margin: 2%;
+    width: 40%;
     display: flex;
-    font-size: .4em;
+    align-items: center;    
+  }
+  .card-body{
+    display: flex;
     flex-direction: column;
-    /* align-content: center; */
-    align-items: center;
-    text-align: left;
-    width: 50%;
+    text-align: start;
+  }
+  .card-body .priceAddbtn{
+    display: flex;
+    flex-direction: column;
+    font-weight: 800;
+    align-items: start;
+    /* border: white solid 1px; */
+  }
 
-
+  .priceAddbtn .CartBtn{
+    color: white;
+    background-color: rgba(255, 255, 255, .4);
+    /* border: white solid 1px; */
   }

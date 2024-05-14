@@ -70,3 +70,10 @@ const sliderContainer = document.getElementById('slider-container');
         var redirectTo = "menu.html";
         window.location.href = redirectTo;
     }
+
+    //* menu  section
+    // Simple function to show/hide the bar on button click (optional)
+function toggleBar() {
+    const bar = document.getElementById('floating-bar');
+    bar.style.display = bar.style.display === 'none' ? 'flex' : 'none';
+  }

@@ -26,6 +26,7 @@ nav{
   justify-content: center;
   align-items: center;
   padding: 10px;
+    
 }
 
 #floating-bar button {
@@ -34,7 +35,7 @@ nav{
   border: none;
   padding: 5px 10px;
   cursor: pointer;
-}
+}   
 .slidingbox{
     border-radius: 10px;
     /* border: red solid 1px; */

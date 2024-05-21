@@ -77,4 +77,3 @@ function toggleBar() {
     const bar = document.getElementById('floating-bar');
     bar.style.display = bar.style.display === 'none' ? 'flex' : 'none';
   }
-  var nav = 

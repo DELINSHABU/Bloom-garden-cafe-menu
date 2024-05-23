@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+  --primary-color: #0A6847;
+}
 *{
     padding: 0%;
     color: white;
     font-family: "Inter", sans-serif;
-    font-weight: 300
+    font-weight: 300;
+    -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+    
 }
 body{
     background-color: #0A6847;
@@ -14,18 +22,17 @@ nav{
     display: flex;
     justify-content: space-around;
 }
-<<<<<<< HEAD
+
 .cartbar {
   position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
-<<<<<<< Updated upstream
+
   margin-top: 120vh;
   opacity: 0%;
-=======
-  margin-top: 90vh;
->>>>>>> Stashed changes
+
+  /* margin-top: 90vh; */
   padding: 0 3rem;
   transition: .5s;
   z-index: 9999;
@@ -41,9 +48,6 @@ nav{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
 }
 .orderList h3,p,h4{
   color: var(--primary-color);
@@ -63,23 +67,12 @@ nav{
   text-decoration: none;
   margin-bottom: 0;
 }
-<<<<<<< Updated upstream
 .ViewItem{
   padding: 1vh;
   border-radius: 25px;
   background-color: var(--primary-color);
   color: #ffff !important;
   cursor: pointer;
-=======
-.bar span{
-  color: var(--primary-color);
-}
-.viewItem{
-  background-color: var(--primary-color);
-  color:#ffff !important;
-  border-radius: 15px;
-  padding: 1vh;
->>>>>>> Stashed changes
 }
 .logo-nav{
   width: 30vh;
@@ -119,8 +112,6 @@ nav{
 
 }
 
-=======
->>>>>>> parent of d5a2ce5 (made the sorting bar)
 #floating-bar {
   position: fixed;
   left: 0;
@@ -142,6 +133,11 @@ nav{
   border: none;
   padding: 5px 10px;
   cursor: pointer;
+}
+.offersection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }   
 .slidingbox{
     border-radius: 10px;

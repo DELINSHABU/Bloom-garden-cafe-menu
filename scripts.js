@@ -126,7 +126,7 @@ function toggleBar() {
   console.log(cartBarDiv.innerHTML)
   var itemList = 0
   
-  document.getElementById("menuList").innerHTML = itemBox
+//   document.getElementById("menuList").innerHTML = itemBox
 
   btnDivIdNode.addEventListener("click",()=>{
     console.log("clicked")

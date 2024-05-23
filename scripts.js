@@ -77,3 +77,82 @@ function toggleBar() {
     const bar = document.getElementById('floating-bar');
     bar.style.display = bar.style.display === 'none' ? 'flex' : 'none';
   }
+
+
+
+  //*menu list
+
+
+  const itemBox = `<div class="col-4 card productBox">
+  <img src="/img/poducts/pngwing.com(1) (Small).png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">fresh juices</h5>
+    <div class="priceAddbtn">
+        <h6>₹70</h6>
+        <div id="btnDivId" class="btnDiv">
+            <a href="#" class="btn CartBtn">Add to list</a>
+        </div>
+    </div>
+
+  </div>
+</div>`
+
+  //* Cart section
+
+   const  ItemList = `<div class="sampleOrder">
+   <div class="leftSection">
+     <h3>Mint Lime</h3>
+     <p>something</p>
+     <h4>30rs</h4>
+   </div>
+   <div class (lass="rightSection">
+     <h3 class="removeItem">Remove</h3>
+     <h3 class="removeItem">0</h3>
+     <h3 class="addMore">Add More</h3>
+   </div>
+ </div>`;
+
+ const cartList = `<div class="cartList">
+ <p><span id="itemCount">0</span>  Item added</p>
+ <p id="ViewItemId" class="ViewItem">View Item <img src="/img/icons/right-arrow 1.png" alt="right-arrow"></p>
+ 
+</div>`;
+  
+  var BarDiv = document.getElementById("barId");
+  var btnDivIdNode = document.getElementById("btnDivId")
+  var cartBarDiv = document.getElementById("cartBarId")
+
+  console.log(btnDivIdNode)
+  console.log(cartBarDiv.innerHTML)
+  var itemList = 0
+  
+  document.getElementById("menuList").innerHTML = itemBox
+
+  btnDivIdNode.addEventListener("click",()=>{
+    console.log("clicked")
+    itemList++
+    BarDiv.innerHTML = cartList;
+    cartBarDiv.style.marginTop = "90vh";
+    cartBarDiv.style.opacity = "100%";
+    document.getElementById("itemCount").innerHTML = itemList;
+  })
+
+//   fetch('menu.json')
+//   .then(response => response.json())
+//   .then(data => {
+//     console.log(data);
+//     // Access categories and products
+//     data.menu.forEach(category => {
+//       console.log(`Category: ${category.category}`);
+//       category.products.forEach(product => {
+//         console.log(`Product Name: ${product.name}, Rate: ${product.rate}`);
+//       });
+//     });
+//   })
+//   .catch(error => console.error('Error fetching the JSON file:', error));
+
+fetch("menu.json")
+.then(response => response.json())
+.then(data => {
+    console.log(data);
+})

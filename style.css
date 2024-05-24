@@ -29,10 +29,15 @@ nav{
   align-items: center;
   justify-content: center;
 
+
   margin-top: 120vh;
   opacity: 0%;
 
   /* margin-top: 90vh; */
+
+  margin-top: 120vh;
+  opacity: 0%;
+
   padding: 0 3rem;
   transition: .5s;
   z-index: 9999;
@@ -67,12 +72,14 @@ nav{
   text-decoration: none;
   margin-bottom: 0;
 }
+
 .ViewItem{
   padding: 1vh;
   border-radius: 25px;
   background-color: var(--primary-color);
   color: #ffff !important;
   cursor: pointer;
+
 }
 .logo-nav{
   width: 30vh;
